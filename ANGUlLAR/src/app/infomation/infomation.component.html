@@ -1,0 +1,27 @@
+<p>infomation works!</p>
+
+<!-- <form #frm= `ngForm`>
+    <div class="">
+        <input type="text" name="location" value="" ngMode>
+        <button type="button" name="button">Add infomation</button>
+    </div>
+</form> -->
+
+
+
+
+<button type="button" name="button" (click)="getInfoFromService1()">Employ1</button>
+<ul class="list-group">
+    <li *ngFor="let info of infoReceive1" class="list-group-info">{{info}}</li>
+</ul>
+
+
+<button type="button" name="button" (click)="getInfoFromService2()">Employ2</button>
+<ul class="list-group">
+    <li *ngFor="let info of infoReceive2" class="list-group-info">{{info}}</li>
+</ul>
+
+<button type="button" name="button" (click)="getInfoFromService3()">Employ3</button>
+<ul class="list-group">
+    <li *ngFor="let info of infoReceive3" class="list-group-info">{{info}}</li>
+</ul>

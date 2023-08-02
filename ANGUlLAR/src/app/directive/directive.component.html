@@ -1,0 +1,32 @@
+
+<p>Angular directive</p>
+<br>
+
+<p>ngfi Directive</p>
+<button (click)="clickButton()">Click!</button>
+
+<div *ngIf="isUserLoggedIn">
+    hello!
+</div>
+
+<br>
+<p>ngFor Directive Directive</p>
+<ul>
+    <li *ngFor="let name of names">
+        {{name}}
+    </li>
+</ul>
+
+<br>
+<p>ngStyle Directive</p>
+<div [ngStyle]="{ color: colorBoolean ? 'red' : 'black' }">
+    This is an HTML element with red text color.
+</div>
+
+<br>
+<p>NgClass Directive:</p>
+<div class="isRed">isRed</div>
+<div class="isBold">isBold</div>
+<div [ngClass]="{ 'isRed': isRed , 'isBold': isBold }">
+    This text is styled using ngClass.
+</div>
